@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Header</title>
+    <style>
+        header .navbar {
+            padding: 25px;
+        }
+
+        .navbar-nav1, .navbar-nav2 {
+            flex-direction: row;
+        }
+
+        .btn3 {
+            color: black;
+            border: none;
+        }
+
+            .btn3:hover {
+                color: black;
+                border-bottom: 1px solid #7e107e;
+                border-radius: 0px;
+            }
+
+        .btn1 {
+            color: white;
+            background-color: darkred;
+        }
+
+            .btn1:hover {
+                color: black;
+            }
+
+        .btn2 {
+            color: #7e107e;
+        }
+
+            .btn2:hover {
+                color: red;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <img src="~/Content/images/image2.png" style="float:left;width: 150px; height: 130px;">
+                <div class="nav navbar-nav1">
+                    <a href= "/home" class="btn btn3">HOME</a>
+                    <a href="/products" class="btn btn3">PRODUCTS</a>
+                    <a href="#" class="btn btn3">ABOUT</a>
+                    <a href="/contact/index" class="btn btn3">CONTACT</a>
+                    @*<a href="#" class="btn btn1">BOOK NOW</a>*@
+                </div>
+                <div class="nav navbar-nav2">
+                    <a href="#" class="btn btn2">My Account</a>
+                    <a href="/account/login" class="btn btn2">Login</a>
+                    <a href="/account/register" class="nav-link">Register</a>
+                    <a href="#" class="btn btn2"><i class="fas fa-search"></i></a>
+                    <a href="#" class="btn btn2"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
